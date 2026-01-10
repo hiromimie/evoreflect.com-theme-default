@@ -1,0 +1,46 @@
+# EvoReflect Default Theme
+# Repository: https://github.com/hiromimie/evoreflect.com-theme-default
+
+name: "default"
+version: "1.0.0"
+author: "EvoReflect Team"
+description: "EvoReflect default theme with Dracula-inspired colors"
+type: "cli"
+
+cli:
+  color_scheme:
+    # Base colors
+    primary: "#bd93f9"
+    secondary: "#8be9fd"
+    accent: "#ff79c6"
+    background: "#282a36"
+    foreground: "#f8f8f2"
+
+    # Status colors
+    success: "#50fa7b"
+    error: "#ff5555"
+    warning: "#ffb86c"
+    info: "#8be9fd"
+
+    # UI colors
+    border: "#6272a4"
+    muted: "#6272a4"
+    highlight: "#44475a"
+
+    # Agent colors
+    agent_reactive: "#50fa7b"
+    agent_deliberative: "#8be9fd"
+    agent_metacognitive: "#bd93f9"
+
+    # Reasoning colors
+    thought_color: "#f1fa8c"
+    action_color: "#50fa7b"
+    observation_color: "#8be9fd"
+
+  syntax_theme: "dracula"
+
+  panel_style:
+    border_style: "rounded"
+    box: "ROUNDED"
+    padding: [1, 2, 1, 2]
+    title_align: "left"
