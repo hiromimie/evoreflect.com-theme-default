@@ -2,10 +2,10 @@
 # Repository: https://github.com/hiromimie/evoreflect.com-theme-default
 
 name: "default"
-version: "1.0.0"
+version: "1.1.0"
 author: "EvoReflect Team"
 description: "EvoReflect default theme with Dracula-inspired colors"
-type: "cli"
+type: "hybrid"
 
 cli:
   color_scheme:
@@ -44,3 +44,58 @@ cli:
     box: "ROUNDED"
     padding: [1, 2, 1, 2]
     title_align: "left"
+
+# GUI configuration (Phase 7.4)
+gui:
+  color_scheme:
+    # Base colors (same as CLI for consistency)
+    primary: "#bd93f9"
+    secondary: "#8be9fd"
+    accent: "#ff79c6"
+    background: "#282a36"
+    foreground: "#f8f8f2"
+
+    # Status colors
+    success: "#50fa7b"
+    error: "#ff5555"
+    warning: "#ffb86c"
+    info: "#8be9fd"
+
+    # UI colors
+    border: "#6272a4"
+    muted: "#6272a4"
+    highlight: "#44475a"
+
+    # Agent colors
+    agent_reactive: "#50fa7b"
+    agent_deliberative: "#8be9fd"
+    agent_metacognitive: "#bd93f9"
+
+    # Reasoning colors
+    thought_color: "#f1fa8c"
+    action_color: "#50fa7b"
+    observation_color: "#8be9fd"
+
+  layout:
+    window_background: "#282a36"
+    window_titlebar_color: "#44475a"
+    sidebar_width: 300
+    sidebar_background: "#21222c"
+    main_area_background: "#282a36"
+    padding: 10
+    margin: 5
+    border_radius: 5
+
+  widgets:
+    button_background: "#44475a"
+    button_hover: "#6272a4"
+    button_active: "#bd93f9"
+    input_background: "#21222c"
+    input_border: "#6272a4"
+    input_focus_border: "#bd93f9"
+    scrollbar_thumb: "#6272a4"
+    scrollbar_track: "#21222c"
+
+  font_family: "Consolas, Monaco, monospace"
+  font_size: 14
+  line_height: 1.5
