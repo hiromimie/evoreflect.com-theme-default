@@ -1,0 +1,164 @@
+{
+  "$schema": "https://evoreflect.com/schemas/gui-theme-v2.json",
+  "name": "default",
+  "version": "2.1.0",
+  "author": "EvoReflect Team",
+  "description": "Default GUI theme with light/dark mode support (Issue #725)",
+  "default_mode": "dark",
+  "modes": {
+    "dark": {
+      "colors": {
+        "background": {
+          "primary": "#282a36",
+          "secondary": "#44475a",
+          "tertiary": "#6272a4"
+        },
+        "foreground": {
+          "primary": "#f8f8f2",
+          "secondary": "#e0e0e0",
+          "muted": "#6272a4"
+        },
+        "accent": {
+          "primary": "#bd93f9",
+          "secondary": "#ff79c6"
+        },
+        "semantic": {
+          "success": "#50fa7b",
+          "error": "#ff5555",
+          "warning": "#ffb86c",
+          "info": "#8be9fd"
+        },
+        "border": "#44475a"
+      },
+      "typography": {
+        "fontFamily": "Inter, Noto Sans JP, sans-serif",
+        "fontFamilyMono": "JetBrains Mono, monospace",
+        "fontSize": {
+          "xs": "11px",
+          "sm": "12px",
+          "base": "14px",
+          "lg": "16px",
+          "xl": "18px"
+        },
+        "lineHeight": "1.6"
+      },
+      "layout": {
+        "sidebar": {
+          "width": "280px",
+          "position": "left",
+          "collapsible": true
+        },
+        "chat": {
+          "maxWidth": "800px",
+          "bubbleStyle": "rounded",
+          "avatarSize": "48px"
+        },
+        "borderRadius": {
+          "sm": "4px",
+          "md": "8px",
+          "lg": "16px"
+        }
+      },
+      "assets": {
+        "logo": {
+          "path": "assets/logo.svg",
+          "width": "120px"
+        }
+      },
+      "avatar": {
+        "user": {
+          "path": "avatar/user.svg",
+          "fallback": "default"
+        },
+        "assistant": {
+          "path": "avatar/assistant.svg",
+          "fallback": "default"
+        }
+      },
+      "skeleton": {
+        "preset": "skeleton",
+        "customizations": {
+          "--color-primary-500": "#bd93f9",
+          "--color-secondary-500": "#ff79c6"
+        }
+      }
+    },
+    "light": {
+      "colors": {
+        "background": {
+          "primary": "#ffffff",
+          "secondary": "#f5f5f5",
+          "tertiary": "#e0e0e0"
+        },
+        "foreground": {
+          "primary": "#1a1a1a",
+          "secondary": "#4a4a4a",
+          "muted": "#888888"
+        },
+        "accent": {
+          "primary": "#7c3aed",
+          "secondary": "#ec4899"
+        },
+        "semantic": {
+          "success": "#22c55e",
+          "error": "#ef4444",
+          "warning": "#f59e0b",
+          "info": "#3b82f6"
+        },
+        "border": "#e0e0e0"
+      },
+      "typography": {
+        "fontFamily": "Inter, Noto Sans JP, sans-serif",
+        "fontFamilyMono": "JetBrains Mono, monospace",
+        "fontSize": {
+          "xs": "11px",
+          "sm": "12px",
+          "base": "14px",
+          "lg": "16px",
+          "xl": "18px"
+        },
+        "lineHeight": "1.6"
+      },
+      "layout": {
+        "sidebar": {
+          "width": "280px",
+          "position": "left",
+          "collapsible": true
+        },
+        "chat": {
+          "maxWidth": "800px",
+          "bubbleStyle": "rounded",
+          "avatarSize": "48px"
+        },
+        "borderRadius": {
+          "sm": "4px",
+          "md": "8px",
+          "lg": "16px"
+        }
+      },
+      "assets": {
+        "logo": {
+          "path": "assets/logo.svg",
+          "width": "120px"
+        }
+      },
+      "avatar": {
+        "user": {
+          "path": "avatar/user.svg",
+          "fallback": "default"
+        },
+        "assistant": {
+          "path": "avatar/assistant.svg",
+          "fallback": "default"
+        }
+      },
+      "skeleton": {
+        "preset": "modern",
+        "customizations": {
+          "--color-primary-500": "#7c3aed",
+          "--color-secondary-500": "#ec4899"
+        }
+      }
+    }
+  }
+}
