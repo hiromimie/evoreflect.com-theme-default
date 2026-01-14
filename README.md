@@ -26,7 +26,7 @@ evoreflect.com-theme-default/
 
 ## 機能
 
-- **Light/Darkモード対応** (Issue #717, #725): ライトモードとダークモードを切り替え可能
+- **Light/Darkモード対応** (Issue #7, #717, #725): ライトモードとダークモードを切り替え可能
 - **レスポンシブデザイン対応** (Issue #716): モバイル、タブレット、デスクトップに最適化されたレイアウト
 - **ハイブリッドテーマ**: CLI（terminal）とGUI（Web）の両方で使用可能
 
@@ -47,13 +47,30 @@ evoreflect.com-theme-default/
 
 ### ライトモード (Solarized ベース)
 
+CLIテーマとGUIテーマの両方でSolarized Lightをベースにした暖色系のクリームカラーパレットを採用しています（Issue #7）。
+
+#### CLIテーマ
+
 | カラー | コード | 用途 |
 |--------|--------|------|
 | Primary | `#268bd2` | メインアクセント（ブルー） |
 | Secondary | `#2aa198` | セカンダリアクセント（シアン） |
 | Accent | `#d33682` | 強調色（マゼンタ） |
-| Background | `#fdf6e3` | 背景色 |
+| Background | `#fdf6e3` | 背景色（クリーム） |
 | Foreground | `#657b83` | 前景色（テキスト） |
+| Success | `#859900` | 成功表示（グリーン） |
+| Error | `#dc322f` | エラー表示（レッド） |
+| Warning | `#b58900` | 警告表示（イエロー） |
+
+#### GUIテーマ
+
+| カラー | コード | 用途 |
+|--------|--------|------|
+| Background Primary | `#fdf6e3` | 背景色（クリーム） |
+| Background Secondary | `#eee8d5` | セカンダリ背景（ベージュ） |
+| Accent Primary | `#cb4b16` | メインアクセント（オレンジ） |
+| Accent Secondary | `#d33682` | セカンダリアクセント（マゼンタ） |
+| Foreground | `#073642` | 前景色（テキスト） |
 | Success | `#859900` | 成功表示（グリーン） |
 | Error | `#dc322f` | エラー表示（レッド） |
 | Warning | `#b58900` | 警告表示（イエロー） |
