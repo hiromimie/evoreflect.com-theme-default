@@ -78,11 +78,13 @@ CLIテーマとGUIテーマの両方でSolarized Lightをベースにした暖�
 | Error | `#dc322f` | エラー表示（レッド） |
 | Warning | `#b58900` | 警告表示（イエロー） |
 
-**コンポーネント専用CSS変数:**
-- `--color-sidebar-bg/fg`: サイドバー用
-- `--color-header-bg/fg`: ヘッダ用
-- `--color-footer-bg/fg`: フッタ用
-- `--color-code-bg/fg/border`: コードブロック用
+**Skeleton UI対応CSS変数（全グラデーション）:**
+
+GUIのサイドバー、ヘッダ、フッタ、パネル等の背景色を正しく適用するため、Skeleton UIが認識する形式の全グラデーション変数を定義しています。
+
+- `--color-surface-50` ～ `--color-surface-900`: 背景色グラデーション（Solarized Lightベース）
+- `--color-primary-50` ～ `--color-primary-900`: プライマリ色グラデーション（オレンジ系）
+- `--color-secondary-50` ～ `--color-secondary-900`: セカンダリ色グラデーション（マゼンタ系）
 
 ## レスポンシブデザイン
 

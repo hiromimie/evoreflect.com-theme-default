@@ -1,7 +1,7 @@
 {
   "$schema": "https://evoreflect.com/schemas/cli-theme-v2.json",
   "name": "default",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "author": "EvoReflect Team",
   "description": "EvoReflect default theme with light/dark mode support (Issue #7, #717, #725)",
   "type": "hybrid",
