@@ -3,7 +3,7 @@
   "name": "default",
   "version": "2.1.0",
   "author": "EvoReflect Team",
-  "description": "Default GUI theme with light/dark mode support (Issue #725)",
+  "description": "Default GUI theme with light/dark mode and responsive design support (Issue #716, #725)",
   "default_mode": "dark",
   "modes": {
     "dark": {
@@ -57,7 +57,13 @@
           "sm": "4px",
           "md": "8px",
           "lg": "16px"
-        }
+        },
+        "breakpoints": {
+          "mobile": "768px",
+          "tablet": "1024px",
+          "desktop": "1440px"
+        },
+        "responsive": true
       },
       "assets": {
         "logo": {
@@ -134,7 +140,13 @@
           "sm": "4px",
           "md": "8px",
           "lg": "16px"
-        }
+        },
+        "breakpoints": {
+          "mobile": "768px",
+          "tablet": "1024px",
+          "desktop": "1440px"
+        },
+        "responsive": true
       },
       "assets": {
         "logo": {
