@@ -18,7 +18,8 @@ git submodule update --init --recursive
 
 ```
 evoreflect.com-theme-default/
-├── theme.yaml       # テーマ定義ファイル
+├── theme.json       # テーマ定義ファイル（JSON形式）
+├── gui-theme.json   # GUIテーマ定義（オプション）
 ├── README.md        # このファイル
 └── LICENSE          # MITライセンス
 ```
