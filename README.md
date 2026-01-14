@@ -64,16 +64,25 @@ CLIテーマとGUIテーマの両方でSolarized Lightをベースにした暖�
 
 #### GUIテーマ
 
+目に優しく見やすい配色を採用しています。Solarized Light推奨の本文テキスト色（`#657b83`）を使用し、コンポーネント専用のCSS変数も定義しています。
+
 | カラー | コード | 用途 |
 |--------|--------|------|
 | Background Primary | `#fdf6e3` | 背景色（クリーム） |
-| Background Secondary | `#eee8d5` | セカンダリ背景（ベージュ） |
+| Background Secondary | `#eee8d5` | セカンダリ背景（サイドバー/ヘッダ/フッタ） |
+| Foreground Primary | `#657b83` | 前景色（本文テキスト） |
+| Foreground Secondary | `#586e75` | セカンダリ前景色 |
 | Accent Primary | `#cb4b16` | メインアクセント（オレンジ） |
 | Accent Secondary | `#d33682` | セカンダリアクセント（マゼンタ） |
-| Foreground | `#073642` | 前景色（テキスト） |
 | Success | `#859900` | 成功表示（グリーン） |
 | Error | `#dc322f` | エラー表示（レッド） |
 | Warning | `#b58900` | 警告表示（イエロー） |
+
+**コンポーネント専用CSS変数:**
+- `--color-sidebar-bg/fg`: サイドバー用
+- `--color-header-bg/fg`: ヘッダ用
+- `--color-footer-bg/fg`: フッタ用
+- `--color-code-bg/fg/border`: コードブロック用
 
 ## レスポンシブデザイン
 
