@@ -1,7 +1,7 @@
 {
   "$schema": "https://evoreflect.com/schemas/gui-theme-v2.json",
   "name": "default",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "author": "EvoReflect Team",
   "description": "Default GUI theme with light/dark mode and responsive design support (Issue #7, #716, #725)",
   "default_mode": "dark",
@@ -94,12 +94,12 @@
         "background": {
           "primary": "#fdf6e3",
           "secondary": "#eee8d5",
-          "tertiary": "#d5cec5"
+          "tertiary": "#e8e2d9"
         },
         "foreground": {
-          "primary": "#073642",
+          "primary": "#657b83",
           "secondary": "#586e75",
-          "muted": "#93a1a1"
+          "muted": "#839496"
         },
         "accent": {
           "primary": "#cb4b16",
@@ -111,7 +111,7 @@
           "warning": "#b58900",
           "info": "#268bd2"
         },
-        "border": "#d3ccc3"
+        "border": "#d3cbc2"
       },
       "typography": {
         "fontFamily": "Inter, Noto Sans JP, sans-serif",
@@ -168,7 +168,16 @@
         "preset": "modern",
         "customizations": {
           "--color-primary-500": "#cb4b16",
-          "--color-secondary-500": "#d33682"
+          "--color-secondary-500": "#d33682",
+          "--color-sidebar-bg": "#eee8d5",
+          "--color-sidebar-fg": "#657b83",
+          "--color-header-bg": "#eee8d5",
+          "--color-header-fg": "#586e75",
+          "--color-footer-bg": "#eee8d5",
+          "--color-footer-fg": "#839496",
+          "--color-code-bg": "#fdf6e3",
+          "--color-code-fg": "#657b83",
+          "--color-code-border": "#eee8d5"
         }
       }
     }
