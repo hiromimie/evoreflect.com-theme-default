@@ -1,9 +1,9 @@
 {
   "$schema": "https://evoreflect.com/schemas/gui-theme-v2.json",
   "name": "default",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "author": "EvoReflect Team",
-  "description": "Default GUI theme with light/dark mode support (Issue #725)",
+  "description": "Default GUI theme with light/dark mode and responsive design support (Issue #7, #716, #725)",
   "default_mode": "dark",
   "modes": {
     "dark": {
@@ -57,7 +57,13 @@
           "sm": "4px",
           "md": "8px",
           "lg": "16px"
-        }
+        },
+        "breakpoints": {
+          "mobile": "768px",
+          "tablet": "1024px",
+          "desktop": "1440px"
+        },
+        "responsive": true
       },
       "assets": {
         "logo": {
@@ -86,26 +92,26 @@
     "light": {
       "colors": {
         "background": {
-          "primary": "#ffffff",
-          "secondary": "#f5f5f5",
-          "tertiary": "#e0e0e0"
+          "primary": "#fdf6e3",
+          "secondary": "#eee8d5",
+          "tertiary": "#d5cec5"
         },
         "foreground": {
-          "primary": "#1a1a1a",
-          "secondary": "#4a4a4a",
-          "muted": "#888888"
+          "primary": "#073642",
+          "secondary": "#586e75",
+          "muted": "#93a1a1"
         },
         "accent": {
-          "primary": "#7c3aed",
-          "secondary": "#ec4899"
+          "primary": "#cb4b16",
+          "secondary": "#d33682"
         },
         "semantic": {
-          "success": "#22c55e",
-          "error": "#ef4444",
-          "warning": "#f59e0b",
-          "info": "#3b82f6"
+          "success": "#859900",
+          "error": "#dc322f",
+          "warning": "#b58900",
+          "info": "#268bd2"
         },
-        "border": "#e0e0e0"
+        "border": "#d3ccc3"
       },
       "typography": {
         "fontFamily": "Inter, Noto Sans JP, sans-serif",
@@ -134,7 +140,13 @@
           "sm": "4px",
           "md": "8px",
           "lg": "16px"
-        }
+        },
+        "breakpoints": {
+          "mobile": "768px",
+          "tablet": "1024px",
+          "desktop": "1440px"
+        },
+        "responsive": true
       },
       "assets": {
         "logo": {
@@ -155,8 +167,8 @@
       "skeleton": {
         "preset": "modern",
         "customizations": {
-          "--color-primary-500": "#7c3aed",
-          "--color-secondary-500": "#ec4899"
+          "--color-primary-500": "#cb4b16",
+          "--color-secondary-500": "#d33682"
         }
       }
     }
