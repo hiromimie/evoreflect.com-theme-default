@@ -92,26 +92,26 @@
     "light": {
       "colors": {
         "background": {
-          "primary": "#fdf6e3",
-          "secondary": "#eee8d5",
-          "tertiary": "#e8e2d9"
+          "primary": "#FFF8F0",
+          "secondary": "#FFF0E0",
+          "tertiary": "#FFE5CC"
         },
         "foreground": {
-          "primary": "#657b83",
-          "secondary": "#586e75",
-          "muted": "#839496"
+          "primary": "#3D2914",
+          "secondary": "#5A3D24",
+          "muted": "#6B5344"
         },
         "accent": {
-          "primary": "#cb4b16",
-          "secondary": "#d33682"
+          "primary": "#E67E22",
+          "secondary": "#C0392B"
         },
         "semantic": {
-          "success": "#859900",
-          "error": "#dc322f",
-          "warning": "#b58900",
-          "info": "#268bd2"
+          "success": "#27AE60",
+          "error": "#C0392B",
+          "warning": "#F39C12",
+          "info": "#D35400"
         },
-        "border": "#d3cbc2"
+        "border": "#E8DDD0"
       },
       "typography": {
         "fontFamily": "Inter, Noto Sans JP, sans-serif",
@@ -165,39 +165,8 @@
         }
       },
       "skeleton": {
-        "preset": "modern",
-        "customizations": {
-          "--color-primary-50": "#fff5eb",
-          "--color-primary-100": "#ffe6d0",
-          "--color-primary-200": "#ffc9a1",
-          "--color-primary-300": "#ffa060",
-          "--color-primary-400": "#e87830",
-          "--color-primary-500": "#cb4b16",
-          "--color-primary-600": "#a33c12",
-          "--color-primary-700": "#7c2e0e",
-          "--color-primary-800": "#541f09",
-          "--color-primary-900": "#2d1105",
-          "--color-secondary-50": "#fdf2f7",
-          "--color-secondary-100": "#fbe4ef",
-          "--color-secondary-200": "#f7c4dd",
-          "--color-secondary-300": "#f09dc5",
-          "--color-secondary-400": "#e66ba6",
-          "--color-secondary-500": "#d33682",
-          "--color-secondary-600": "#aa2b68",
-          "--color-secondary-700": "#80204e",
-          "--color-secondary-800": "#561634",
-          "--color-secondary-900": "#2d0b1a",
-          "--color-surface-50": "#fdf6e3",
-          "--color-surface-100": "#f5efd6",
-          "--color-surface-200": "#eee8d5",
-          "--color-surface-300": "#e8e2cf",
-          "--color-surface-400": "#ddd6c4",
-          "--color-surface-500": "#d3cbc2",
-          "--color-surface-600": "#b8ad9e",
-          "--color-surface-700": "#9a9081",
-          "--color-surface-800": "#7c7365",
-          "--color-surface-900": "#5e564a"
-        }
+        "preset": "evoreflect-light",
+        "customizations": {}
       }
     }
   }
