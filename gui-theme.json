@@ -153,11 +153,8 @@
         }
       },
       "skeleton": {
-        "preset": "modern",
-        "customizations": {
-          "--color-primary-500": "#D35400",
-          "--color-secondary-500": "#C0392B"
-        }
+        "preset": "evoreflect-light",
+        "customizations": {}
       }
     }
   }
