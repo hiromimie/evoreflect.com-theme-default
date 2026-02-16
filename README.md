@@ -20,6 +20,9 @@ git submodule update --init --recursive
 evoreflect.com-theme-default/
 ├── theme.json       # テーマ定義ファイル（JSON形式）
 ├── gui-theme.json   # GUIテーマ定義（オプション）
+├── avatar/          # アバター画像（Issue #1189）
+│   ├── user.svg     # ユーザーアバター
+│   └── assistant.svg # アシスタントアバター
 ├── README.md        # このファイル
 └── LICENSE          # MITライセンス
 ```
@@ -29,6 +32,7 @@ evoreflect.com-theme-default/
 - **Light/Darkモード対応** (Issue #7, #717, #725): ライトモードとダークモードを切り替え可能
 - **レスポンシブデザイン対応** (Issue #716): モバイル、タブレット、デスクトップに最適化されたレイアウト
 - **ハイブリッドテーマ**: CLI（terminal）とGUI（Web）の両方で使用可能
+- **カスタムアバター** (Issue #1189): テーマカラーに合わせたSVGアバター画像を同梱
 
 ## カラーパレット
 
