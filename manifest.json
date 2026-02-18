@@ -1,0 +1,24 @@
+{
+  "$schema": "https://evoreflect.com/schemas/template-manifest-v1.json",
+  "id": "evoreflect/default",
+  "name": "Default",
+  "version": "1.0.0",
+  "evoreflect_version": ">=0.6.0",
+  "author": {
+    "name": "EvoReflect Team"
+  },
+  "license": "MIT",
+  "description": {
+    "ja": "EvoReflect デフォルトテンプレート。ダークモードを基調としたシンプルで洗練されたデザイン。",
+    "en": "EvoReflect default template with a dark-first, clean and elegant design."
+  },
+  "display_colors": {
+    "auto": false,
+    "colors": ["#18181b", "#bd93f9", "#8be9fd"]
+  },
+  "category": "dark",
+  "tags": ["minimal", "professional", "dark"],
+  "design": "design/tokens.json",
+  "layout": "layout/default.json",
+  "assets": "assets/"
+}

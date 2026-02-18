@@ -1,0 +1,56 @@
+{
+  "formatVersion": "1.0",
+  "componentLayout": {
+    "type": "flex",
+    "id": "root",
+    "direction": "column",
+    "style": {
+      "height": "100vh",
+      "overflow": "hidden"
+    },
+    "children": [
+      {
+        "type": "widget",
+        "id": "header",
+        "widgetId": "builtin:status-bar"
+      },
+      {
+        "type": "flex",
+        "id": "main-area",
+        "direction": "row",
+        "style": {
+          "flex": "1",
+          "overflow": "hidden"
+        },
+        "children": [
+          {
+            "type": "widget",
+            "id": "sidebar-left",
+            "widgetId": "builtin:file-tree"
+          },
+          {
+            "type": "flex",
+            "id": "center-area",
+            "direction": "column",
+            "style": {
+              "flex": "1",
+              "overflow": "hidden"
+            },
+            "children": [
+              {
+                "type": "widget",
+                "id": "chat-display",
+                "widgetId": "builtin:chat-display"
+              },
+              {
+                "type": "widget",
+                "id": "message-input",
+                "widgetId": "builtin:message-input"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
