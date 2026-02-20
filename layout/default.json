@@ -1,56 +1,117 @@
 {
-  "formatVersion": "1.0",
-  "componentLayout": {
-    "type": "flex",
-    "id": "root",
-    "direction": "column",
-    "style": {
-      "height": "100vh",
-      "overflow": "hidden"
-    },
-    "children": [
-      {
-        "type": "widget",
-        "id": "header",
-        "widgetId": "builtin:status-bar"
-      },
-      {
-        "type": "flex",
-        "id": "main-area",
-        "direction": "row",
-        "style": {
-          "flex": "1",
-          "overflow": "hidden"
-        },
-        "children": [
-          {
-            "type": "widget",
-            "id": "sidebar-left",
-            "widgetId": "builtin:file-tree"
-          },
-          {
-            "type": "flex",
-            "id": "center-area",
-            "direction": "column",
-            "style": {
-              "flex": "1",
-              "overflow": "hidden"
-            },
-            "children": [
-              {
-                "type": "widget",
-                "id": "chat-display",
-                "widgetId": "builtin:chat-display"
-              },
-              {
-                "type": "widget",
-                "id": "message-input",
-                "widgetId": "builtin:message-input"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+	"formatVersion": "1.0.0",
+	"componentLayout": {
+		"type": "flex",
+		"direction": "column",
+		"style": { "height": "100%" },
+		"children": [
+			{
+				"type": "flex",
+				"direction": "row",
+				"aria": { "role": "banner" },
+				"style": {
+					"height": "56px",
+					"align-items": "center",
+					"padding": "0 1rem",
+					"gap": "0.5rem",
+					"border-bottom": "1px solid var(--semantic-border-default, #3f3f46)",
+					"flex-shrink": "0"
+				},
+				"children": [
+					{ "type": "widget", "widgetType": "builtin:logo", "props": { "alt": "EvoReflect", "width": "32px", "height": "32px" } },
+					{ "type": "widget", "widgetType": "builtin:text", "props": { "text": "EvoReflect", "level": "span" }, "style": { "font-weight": "600", "font-size": "1.125rem" } },
+					{ "type": "widget", "widgetType": "builtin:spacer", "props": { "direction": "horizontal" } },
+					{ "type": "widget", "widgetType": "builtin:theme-mode-toggle" },
+					{ "type": "widget", "widgetType": "builtin:hamburger-menu" }
+				]
+			},
+			{
+				"type": "split",
+				"direction": "horizontal",
+				"sizes": [24, 76],
+				"minSizes": [180, 400],
+				"style": { "flex-grow": "1", "min-height": "0" },
+				"children": [
+					{
+						"type": "tabs",
+						"id": "sidebar-tabs",
+						"defaultTab": "threads",
+						"tabs": [
+							{
+								"id": "threads",
+								"label": "Threads",
+								"labelI18n": "sidebar.threads",
+								"children": [
+									{ "type": "widget", "widgetType": "builtin:thread-group" }
+								]
+							},
+							{
+								"id": "files",
+								"label": "Files",
+								"labelI18n": "sidebar.files",
+								"children": [
+									{ "type": "widget", "widgetType": "builtin:file-tree" }
+								]
+							}
+						],
+						"aria": { "role": "navigation", "label": "Sidebar" }
+					},
+					{
+						"type": "tabs",
+						"id": "main-tabs",
+						"defaultTab": "chat",
+						"aria": { "role": "main" },
+						"tabs": [
+							{
+								"id": "chat",
+								"label": "Chat",
+								"labelI18n": "main.tab_chat",
+								"children": [
+									{
+										"type": "flex",
+										"direction": "column",
+										"style": { "flex-grow": "1", "min-height": "0" },
+										"children": [
+											{
+												"type": "widget",
+												"widgetType": "builtin:chat-display",
+												"style": { "flex-grow": "1", "overflow-y": "auto", "min-height": "0" }
+											},
+											{
+												"type": "widget",
+												"widgetType": "builtin:message-input",
+												"style": { "flex-shrink": "0" }
+											}
+										]
+									}
+								]
+							},
+							{
+								"id": "code",
+								"label": "Code",
+								"labelI18n": "main.tab_code",
+								"children": [
+									{
+										"type": "widget",
+										"widgetType": "builtin:code-editor",
+										"style": { "flex-grow": "1", "min-height": "0" }
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "flex",
+				"direction": "row",
+				"aria": { "role": "contentinfo" },
+				"visible": { "==": [{ "var": "viewport.breakpoint" }, "desktop"] },
+				"style": { "height": "28px", "align-items": "center", "padding": "0 1rem", "flex-shrink": "0" },
+				"children": [
+					{ "type": "widget", "widgetType": "builtin:status-bar" }
+				]
+			}
+		]
+	}
 }
