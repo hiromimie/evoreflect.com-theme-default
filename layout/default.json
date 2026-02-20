@@ -14,28 +14,31 @@
 					"align-items": "center",
 					"padding": "0 1rem",
 					"gap": "0.5rem",
-					"border-bottom": "1px solid var(--semantic-border-default, #3f3f46)",
+					"border-bottom": "1px solid #3f3f46",
 					"flex-shrink": "0"
 				},
 				"children": [
 					{ "type": "widget", "widgetType": "builtin:logo", "props": { "alt": "EvoReflect", "width": "32px", "height": "32px" } },
 					{ "type": "widget", "widgetType": "builtin:text", "props": { "text": "EvoReflect", "level": "span" }, "style": { "font-weight": "600", "font-size": "1.125rem" } },
 					{ "type": "widget", "widgetType": "builtin:spacer", "props": { "direction": "horizontal" } },
-					{ "type": "widget", "widgetType": "builtin:theme-mode-toggle" },
 					{ "type": "widget", "widgetType": "builtin:hamburger-menu" }
 				]
 			},
 			{
-				"type": "split",
-				"direction": "horizontal",
-				"sizes": [24, 76],
-				"minSizes": [180, 400],
-				"style": { "flex-grow": "1", "min-height": "0" },
+				"type": "flex",
+				"direction": "row",
+				"style": { "flex-grow": "1", "min-height": "0", "overflow": "hidden" },
 				"children": [
 					{
 						"type": "tabs",
 						"id": "sidebar-tabs",
 						"defaultTab": "threads",
+						"style": {
+							"width": "240px",
+							"flex-shrink": "0",
+							"flex-grow": "0",
+							"border-right": "1px solid #3f3f46"
+						},
 						"tabs": [
 							{
 								"id": "threads",
@@ -60,6 +63,7 @@
 						"type": "tabs",
 						"id": "main-tabs",
 						"defaultTab": "chat",
+						"style": { "flex-grow": "1", "min-width": "0" },
 						"aria": { "role": "main" },
 						"tabs": [
 							{
