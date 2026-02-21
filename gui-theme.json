@@ -1,0 +1,80 @@
+{
+  "modes": {
+    "dark": {
+      "colors": {
+        "background": {
+          "primary": "#111827",
+          "secondary": "#1F2937"
+        },
+        "foreground": {
+          "primary": "#E5E7EB",
+          "secondary": "#9CA3AF",
+          "muted": "#6B7280"
+        },
+        "accent": {
+          "primary": "#F472B6"
+        },
+        "semantic": {
+          "success": "#34D399",
+          "error": "#F87171",
+          "warning": "#FBBF24",
+          "info": "#60A5FA"
+        },
+        "border": "#374151"
+      },
+      "typography": {
+        "fontFamily": "Inter, Noto Sans JP, system-ui, sans-serif",
+        "fontFamilyMono": "JetBrains Mono, Consolas, monospace",
+        "fontSize": {
+          "base": "0.875rem"
+        },
+        "lineHeight": "1.5"
+      },
+      "layout": {
+        "sidebar": {
+          "width": "280px",
+          "position": "left",
+          "collapsible": true
+        }
+      }
+    },
+    "light": {
+      "colors": {
+        "background": {
+          "primary": "#F5F5F7",
+          "secondary": "#E5E7EB"
+        },
+        "foreground": {
+          "primary": "#1F2933",
+          "secondary": "#52606D",
+          "muted": "#7B8794"
+        },
+        "accent": {
+          "primary": "#DB2777"
+        },
+        "semantic": {
+          "success": "#059669",
+          "error": "#DC2626",
+          "warning": "#D97706",
+          "info": "#2563EB"
+        },
+        "border": "#D1D5DB"
+      },
+      "typography": {
+        "fontFamily": "Inter, Noto Sans JP, system-ui, sans-serif",
+        "fontFamilyMono": "JetBrains Mono, Consolas, monospace",
+        "fontSize": {
+          "base": "0.875rem"
+        },
+        "lineHeight": "1.5"
+      },
+      "layout": {
+        "sidebar": {
+          "width": "280px",
+          "position": "left",
+          "collapsible": true
+        }
+      }
+    }
+  }
+}
